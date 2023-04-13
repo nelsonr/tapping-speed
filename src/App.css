@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    background-image: radial-gradient(circle farthest-corner at 0.2% 0.5%, rgb(68, 36, 163) 3.7%, #54d4e4 92.7%);
+    color: #FFF;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 300;
+}
+
+section {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+blockquote {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+blockquote::before {
+    content: '\201C';
+}
+
+blockquote::after {
+    content: '\201D';
+}
+
+input {
+    height: 60px;
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e46454;
+    outline: none;
+    font-size: 1.2em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats strong {
+    font-weight: 400;
+}
+
+.tapping-values {
+    height: 100px;
+    overflow: auto;
+}
+
+.tapping-values ul {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    padding: 0;
+}
+
+.tapping-values li {
+    margin: 0;
+    padding: 0;
+}
