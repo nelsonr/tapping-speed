@@ -53,7 +53,7 @@ function App () {
                     <button onClick={clear}>Clear</button>
                 </div>
                 <div className="tapping-values">
-                    <ul>{tappingValues.map((val, index) => <li key={index}>{val}ms</li>)}</ul>
+                    <ul>{tappingValues.map((val, index) => <li key={index}>{Math.round(val)}ms</li>)}</ul>
                 </div>
             </section>
         </div>
